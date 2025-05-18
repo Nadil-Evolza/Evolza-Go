@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math/rand"
 	"os"
 	"strconv"
 	"strings"
@@ -11,7 +12,8 @@ import (
 func main() {
 	fmt.Println("Hello, World!")
 	//greetings()
-	Rectangle()
+	//Rectangle()
+	random()
 }
 
 func greetings(){
@@ -42,4 +44,35 @@ func Rectangle(){
 	area := length * width
 
 	fmt.Printf("The area of the reactangle is: %v", area)
+}
+
+func random(){
+	var attempts int
+	target := rand.Intn(100)+1
+
+	reader := bufio.NewReader(os.Stdin)
+	for{
+		fmt.Print("Enter your guess: ")
+		input, _ := reader.ReadString('\n')
+		input = strings.TrimSpace(input)
+
+		number, err := strconv.Atoi(input)
+
+		if err != nil{
+			fmt.Println("Please enter a valid number")
+			continue
+		}
+
+		attempts++
+
+		if number < target {
+			fmt.Println("Too low!")
+		} else if number > target {
+			fmt.Println("Too high!")
+		} else {
+			fmt.Printf("Correct! You guessed in %v attempts", attempts)
+			break
+		}
+	}
+
 }
