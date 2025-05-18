@@ -13,7 +13,8 @@ func main() {
 	fmt.Println("Hello, World!")
 	//greetings()
 	//Rectangle()
-	random()
+	//random()
+	converter()
 }
 
 func greetings(){
@@ -76,3 +77,4 @@ func random(){
 	}
 
 }
+
