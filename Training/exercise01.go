@@ -14,7 +14,8 @@ func main() {
 	//greetings()
 	//Rectangle()
 	//random()
-	converter()
+	//converter()
+	loan()
 }
 
 func greetings(){
