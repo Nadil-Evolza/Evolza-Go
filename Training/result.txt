@@ -1,0 +1,2 @@
+Total lines: 3
+Occurrences of 'go': 0

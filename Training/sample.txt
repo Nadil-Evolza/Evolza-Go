@@ -1,0 +1,3 @@
+This is an example paragraph. It demonstrates how to write a simple block of text in a file. 
+Paragraphs are useful for organizing information and making content easier to read. 
+You can add more sentences to expand on your topic or provide additional details as needed.

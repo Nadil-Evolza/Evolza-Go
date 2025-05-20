@@ -10,13 +10,35 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, World!")
+	//fmt.Println("Hello, World!")
 	//greetings()
 	//Rectangle()
 	//random()
 	//converter()
 	//loan()
-	Analyzer()
+	//Analyzer()
+	//CheckPassword()
+
+	// password, err := GeneratePassword(12, true, true, true, true)
+	// if err != nil {
+	// 	fmt.Println("Error:", err)
+	// 	return
+	// }
+	// fmt.Println("Generated Password:", password)
+
+	// inputFile := "sample.txt"
+	// outputFile := "result.txt"
+	// wordToFind := "go"
+
+	// err := ProcessFile(inputFile, outputFile, wordToFind)
+	// if err != nil {
+	// 	fmt.Println("Error:", err)
+	// 	return
+	// }
+
+	// fmt.Println("Processing complete. Results written to", outputFile)
+
+	StartServer()
 }
 
 func greetings(){
